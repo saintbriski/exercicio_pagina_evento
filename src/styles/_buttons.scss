@@ -1,0 +1,27 @@
+.button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+
+    &:hover {
+        background-color: lighten($color: #4a1c10, $amount: 15%);
+    }
+
+    &--primary {
+        color: #ccc;
+        background-color: #4a1c10;
+    }
+
+    @media (max-width: 1024px) {
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+    }
+}

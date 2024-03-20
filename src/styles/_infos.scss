@@ -1,0 +1,41 @@
+.infos {
+    padding: 16px 24px;
+    background: linear-gradient(to right, #ff7e5f,  #fe817b);
+    display: flex;
+    justify-content: space-between;
+
+    &__details {
+        display: flex;
+        gap: 40px;
+
+        &__item {
+            font-size: 14px;
+            color: #000;
+
+            b {
+                color: #000;
+                font-size: 18px;
+                display: block;
+                padding-bottom: 8px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        &__details {
+            gap: 16px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+
+        &__details {
+            display: block;
+
+            &__item {
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
